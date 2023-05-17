@@ -1,0 +1,5 @@
+.right {
+    border-left: 1px var(--nice-white) solid;
+    box-shadow: -15px 0px 64px var(--nice-white);
+    border-radius: 15px 0 0 15px;
+}

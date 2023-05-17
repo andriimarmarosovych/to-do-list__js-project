@@ -5,8 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/menu.css">
+    <link rel="stylesheet" href="/styles/right.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+        }
+    </style>
 </head>
 <body>
-    <script src="script.js"> </script>
+    <main>
+        <section class="menu">
+            <div class="logo">
+                <img src="/to-do-list-logo.png">
+                <div><h1>To-Do</h1></div>
+            </div>
+            <div id="list-container" class="list-selector">
+                <!-- <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div> -->
+                <div id="add-list" class="list add-list">
+                    <!-- <span class="material-symbols-outlined">add</span> -->
+                    <div class="namer">
+                        <input>
+                        <button><span class="material-symbols-outlined">done</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="workspace">
+
+        </section>
+        <section class="right">
+
+        </section>
+    </main>
 </body>
+<script src="script.js"> </script>
 </html>

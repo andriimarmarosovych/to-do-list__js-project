@@ -1,0 +1,101 @@
+.menu {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 2rem;
+    border-right: 1px var(--nice-white) solid;
+    box-shadow: -15px 0px 64px var(--nice-white);
+    border-radius: 0 15px 15px 0;
+    overflow: hidden;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    place-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.logo img {
+    max-width: 70px;
+}
+
+.logo div:has(h1) {
+    display: grid;
+    place-items: center start;
+}
+
+.logo h1 {
+    margin: 0;
+    color: var(--nice-white);
+    font-size: 40px;
+}
+
+.list-selector {
+    display: grid;
+    gap: .5rem;
+    overflow-y: auto;
+    direction: rtl;
+}
+
+.list {
+    background-color: var(--bg-lighter);
+    color: var(--nice-white);
+    height: 10vh;
+    border-radius: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: all 500ms ease;
+    direction: ltr;
+    display: grid;
+    place-items: center;
+    padding: .5rem;
+}
+
+.list .material-symbols-outlined {
+    font-size: 60px;
+}
+
+.list:hover {
+    background-color: var(--nice-white);
+    transform: translateX(10px);
+    color: var(--bg-color);
+}
+.list.add-list:hover {
+    transform: none;
+}
+
+.list.add-list {
+    overflow: hidden;
+}
+
+.list.add-list.clicked>span {
+    animation: slide-down 300ms ease forwards;
+}
+
+@keyframes slide-down {from {transform: none;} to {transform: translateY(120%);}}
+
+.namer {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: .5rem;
+}
+
+.namer button {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 10px;
+    color: var(--nice-white);
+    min-width: 50px;
+    cursor: pointer;
+}
+
+.namer input {
+    width: 100%;
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 10px;
+    color: var(--nice-white);
+    font-size: 24px;
+}
